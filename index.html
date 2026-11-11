@@ -4,9 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hans David Cruz — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, I'm Hans David Cruz.</h1>
-  <p>Bulacan State University BSIT Student · Aspiring Cybersecurity Professional</p>
+	<!-- NAVIGATION -->
+	<nav>
+		<div class="logo">dibed59@portfolio:~$</div>
+        <div class="nav-links">
+            <a href="#about">./about</a>
+            <a href="#skills">./skills</a>
+            <a href="#projects">./projects</a>
+            <a href="#contact">./contact</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙/☀️</button>
+    </nav>
+	
+	<!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <p class="hero-prompt">> Initializing profile...</p>
+        <h1>HELLO, I'M<br>David Cruz.</h1>
+        <h2>BSIT Student | Aspiring Cybersecurity Professional & Developer</h2>
+        <div>
+            <a href="#projects" class="btn">View Projects</a>
+            <!--<a href="YOUR_RESUME_LINK_HERE.pdf" class="btn" target="_blank">Download Resume</a>-->
+        </div>
+    </section>
+	<!-- ABOUT & SKILLS SECTION -->
+    <section id="about">
+        <h2>> cat about_me.txt</h2>
+        <p>I am a 3rd-year Information Technology student majoring in Web, Mobile, and Application Development. 
+		My ultimate career goal is to become a White Hat Hacker / Cybersecurity Professional. I believe that understanding how to build systems 
+		(development) is the best foundation for learning how to protect them (security).</p>
+		<h3 style="margin-top: 2rem;">> ls skills/</h3>
+        <p><strong>Development:</strong> Java, C#, HTML, CSS, JavaScript, XML, Python (Basic)</p>
+        <p><strong>Security (Learning):</strong> Network fundamentals, TryHackMe labs, CTF basics</p>
+    </section>
+	<!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>> ls projects/</h2>
+        <div class="project-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>i-Dash: DSS Inventory System</h3>
+                <p>A web-based Decision Support System for inventory and sales management. Built for RGCA Interior Designs as a client prototype.</p>
+                <span class="tech-stack">[ HTML, CSS, JavaScript, Database ]</span>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Pokédex & Team Builder</h3>
+                <p>A collaborative application that allows users to browse Pokémon and build custom teams. Developed as a team project.</p>
+                <span class="tech-stack">[ Java, C#, XML, Team Collaboration ]</span>
+            </div>
+
+        </div>
+    </section>
+	<!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>> ./contact.sh</h2>
+        <p>I am currently open to internships, junior developer roles, and cybersecurity learning opportunities. Let's connect!</p>
+        <p>Email: <a href="mailto:cruz.hansdavid227@gmail.com" style="color: var(--accent-color);">cruz.hansdavid227@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/dibed59" target="_blank" style="color: var(--accent-color);">github.com/dibed59</a></p>
+    </section>
+
+    <!-- JAVASCRIPT FOR THEME TOGGLE -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
 </body>
 </html>
